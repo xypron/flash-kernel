@@ -1476,6 +1476,62 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Raspberry Pi 1 Model A
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-a.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi 1 Model A+
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-a-plus.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi 1 Model B
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-b.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi 1 Model B+
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-b-plus.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi 1 Model B Rev2
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-b-rev2.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi 1 Compute Module
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-cm1-io1.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi Zero
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-zero.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi Zero W
+Kernel-Flavors: rpi
+DTB-Id: bcm2835-rpi-zero-w.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
 Machine: Raspberry Pi 2 Model B
 Kernel-Flavors: armmp armmp-lpae
 DTB-Id: bcm2836-rpi-2-b.dtb
@@ -1493,6 +1549,13 @@ Boot-Script-Path: /boot/boot.scr
 Machine: Raspberry Pi 3 Model B+
 Kernel-Flavors: arm64 armmp armmp-lpae
 DTB-Id: broadcom/bcm2837-rpi-3-b-plus.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+Boot-Script-Path: /boot/boot.scr
+
+Machine: Raspberry Pi 3 Compute Module
+Kernel-Flavors: arm64 armmp armmp-lpae
+DTB-Id: broadcom/bcm2837-rpi-cm3-io3.dtb
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 Boot-Script-Path: /boot/boot.scr
