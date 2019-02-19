@@ -1,3 +1,10 @@
+flash-kernel (3.98) UNRELEASED; urgency=medium
+
+  * Add machine db entry for Rock64 (Closes: #906696). Thanks to Josua
+    Mayer.
+
+ -- Vagrant Cascadian <vagrant@debian.org>  Tue, 19 Feb 2019 11:52:19 -0800
+
 flash-kernel (3.97) unstable; urgency=medium
 
   [ Vagrant Cascadian ]
