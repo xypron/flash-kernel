@@ -505,12 +505,6 @@ Boot-Script-Path: /boot/boot.scr
 Required-Packages: u-boot-tools
 Bootloader-Sets-Incorrect-Root: yes
 
-Machine: GLAN Tank
-Method: symlink
-Kernel-Flavors: iop32x
-Machine-Id: 1100
-Bootloader-Sets-Incorrect-Root: yes
-
 Machine: GTA02
 Method: multi
 Kernel-Flavors: s3c24xx
@@ -887,15 +881,6 @@ DTB-Id: sun7i-a20-lamobo-r1.dtb
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
-# Really: Intel SS4000-e and compatibles
-Machine: Lanner EM7210
-Method: redboot
-Kernel-Flavors: iop32x
-Machine-Id: 1212
-Mtd-Kernel: zImage
-Mtd-Initrd: ramdisk.gz
-Bootloader-Sets-Incorrect-Root: yes
-
 Machine: LeMaker Banana Pi
 Kernel-Flavors: armmp armmp-lpae
 Boot-Script-Path: /boot/boot.scr
@@ -937,17 +922,6 @@ Boot-Script-Path: /boot/boot.scr
 DTB-Id: sun7i-a20-pcduino3-nano.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
-
-Machine: Linksys NSLU2
-Method: slug
-Kernel-Flavors: ixp4xx
-Mtd-Kernel: Kernel
-Mtd-Initrd: Ramdisk
-# firmware can be provided in other ways and is not always needed
-Optional-Packages: ixp4xx-firmware
-# nslu2-utils will call update-initramfs -u to include the firmware and to run
-# the hook from flash-kernel
-Required-Packages: apex-nslu2 nslu2-utils
 
 Machine: Marvell DB-78x00-BP Development Board
 U-Boot-Kernel-Address: 0x8000
@@ -1602,14 +1576,6 @@ Boot-Script-Path: /boot/boot.scr
 DTB-Id: sun6i-a31s-sinovoip-bpi-m2.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
-
-Machine: Thecus N2100
-Method: redboot
-Kernel-Flavors: iop32x
-Machine-Id: 1101
-Mtd-Kernel: kernel
-Mtd-Initrd: ramdisk
-Bootloader-Sets-Incorrect-Root: yes
 
 Machine: Theobroma Systems RK3399-Q7 SoM
 Kernel-Flavors: arm64

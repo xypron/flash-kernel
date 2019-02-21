@@ -1,7 +1,12 @@
 flash-kernel (3.98) UNRELEASED; urgency=medium
 
+  [ Vagrant Cascadian ]
   * Add machine db entry for Rock64 (Closes: #906696). Thanks to Josua
     Mayer.
+
+  [ Cyril Brulebois ]
+  * Drop “beep” support for arm*/ixp4xx and arm*/iop32x; support for
+    those platforms was removed from the Linux kernel and therefore d-i.
 
  -- Vagrant Cascadian <vagrant@debian.org>  Tue, 19 Feb 2019 11:52:19 -0800
 
