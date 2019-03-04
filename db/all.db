@@ -74,6 +74,13 @@ DTB-Id: sun8i-h3-bananapi-m2-plus.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: Banana Pi M2 Berry
+Kernel-Flavors: armmp armmp-lpae
+Boot-Script-Path: /boot/boot.scr
+DTB-Id: sun8i-v40-bananapi-m2-berry.dtb
+U-Boot-Script-Name: bootscr.sunxi
+Required-Packages: u-boot-tools
+
 Machine: BA10 tvbox
 Kernel-Flavors: armmp
 Boot-Script-Path: /boot/boot.scr
