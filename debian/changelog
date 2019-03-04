@@ -8,6 +8,9 @@ flash-kernel (3.98) UNRELEASED; urgency=medium
   * Drop “beep” support for arm*/ixp4xx and arm*/iop32x; support for
     those platforms was removed from the Linux kernel and therefore d-i.
 
+  [ Heinrich Schuchardt ]
+  * Provide db entry for the Pine A64 LTS board (Closes: #923655).
+
  -- Vagrant Cascadian <vagrant@debian.org>  Tue, 19 Feb 2019 11:52:19 -0800
 
 flash-kernel (3.97) unstable; urgency=medium
