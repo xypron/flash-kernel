@@ -14,6 +14,7 @@ flash-kernel (3.98) UNRELEASED; urgency=medium
   * Provide db entry for the Pine A64 LTS board (Closes: #923655).
 
   [ Updated translations ]
+  * Indonesian (id.po) by Muhammad Rifqi Priyo Susanto
   * Vietnamese (vi.po) by Trần Ngọc Quân
 
  -- Vagrant Cascadian <vagrant@debian.org>  Tue, 19 Feb 2019 11:52:19 -0800
