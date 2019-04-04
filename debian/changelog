@@ -1,4 +1,4 @@
-flash-kernel (3.98) UNRELEASED; urgency=medium
+flash-kernel (3.98) unstable; urgency=medium
 
   [ Vagrant Cascadian ]
   * Add machine db entry for Rock64 (Closes: #906696). Thanks to Josua
@@ -13,10 +13,6 @@ flash-kernel (3.98) UNRELEASED; urgency=medium
   [ Heinrich Schuchardt ]
   * Provide db entry for the Pine A64 LTS board (Closes: #923655).
 
-  [ Updated translations ]
-  * Indonesian (id.po) by Muhammad Rifqi Priyo Susanto
-  * Vietnamese (vi.po) by Trần Ngọc Quân
-
   [ Jonas Smedegaard ]
   * Add an entry for Olimex A64 Teres-I (Closes: #926071).
 
@@ -24,7 +20,11 @@ flash-kernel (3.98) UNRELEASED; urgency=medium
   * Add entries for Raspberry Pi 1, Pi Zero and Pi 3 Compute Module
     (Closes: #921518). Thanks to Alexandre GRIVEAUX.
 
- -- Vagrant Cascadian <vagrant@debian.org>  Tue, 19 Feb 2019 11:52:19 -0800
+  [ Updated translations ]
+  * Indonesian (id.po) by Muhammad Rifqi Priyo Susanto
+  * Vietnamese (vi.po) by Trần Ngọc Quân
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 04 Apr 2019 23:38:42 +0200
 
 flash-kernel (3.97) unstable; urgency=medium
 
