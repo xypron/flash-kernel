@@ -17,6 +17,9 @@ flash-kernel (3.98) UNRELEASED; urgency=medium
   * Indonesian (id.po) by Muhammad Rifqi Priyo Susanto
   * Vietnamese (vi.po) by Trần Ngọc Quân
 
+  [ Jonas Smedegaard ]
+  * Add an entry for Olimex A64 Teres-I (Closes: #926071).
+
  -- Vagrant Cascadian <vagrant@debian.org>  Tue, 19 Feb 2019 11:52:19 -0800
 
 flash-kernel (3.97) unstable; urgency=medium
