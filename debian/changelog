@@ -1,3 +1,10 @@
+flash-kernel (3.99) UNRELEASED; urgency=medium
+
+  * Remove Christian Perrier from Uploaders, with many thanks for all
+    his contributions over the years!
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 20 Apr 2019 22:34:32 +0200
+
 flash-kernel (3.98) unstable; urgency=medium
 
   [ Vagrant Cascadian ]
