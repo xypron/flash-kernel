@@ -952,9 +952,17 @@ U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
 Machine: Marvell 8040 MACCHIATOBin
+Machine: Marvell 8040 MACCHIATOBin Double-shot
 Machine: Marvell 8040 MACHIATOBin
 Kernel-Flavors: arm64
 DTB-Id: marvell/armada-8040-mcbin.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Marvell 8040 MACCHIATOBin Single-shot
+Kernel-Flavors: arm64
+DTB-Id: marvell/armada-8040-mcbin-singleshot.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
