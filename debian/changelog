@@ -1,5 +1,9 @@
 flash-kernel (3.99) UNRELEASED; urgency=medium
 
+  [ Domenico Andreoli ]
+  * Add support for NanoPi NEO2 (Closes: #928861).
+
+  [ Cyril Brulebois ]
   * Remove Christian Perrier from Uploaders, with many thanks for all
     his contributions over the years! (Closes: #927488)
 
