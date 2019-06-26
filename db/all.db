@@ -1170,6 +1170,13 @@ DTB-Id: sun8i-a33-olinuxino.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: Olimex A64-Olinuxino
+Kernel-Flavors: arm64
+DTB-Id: allwinner/sun50i-a64-olinuxino.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Olimex A64 Teres-I
 Kernel-Flavors: arm64
 DTB-Id: sun50i-a64-teres-i.dtb
