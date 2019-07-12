@@ -897,6 +897,21 @@ case "$method" in
 		fi
 		android_flash "$part"
 	;;
+	"bootspec")
+		{
+			printf "title\t\tDebian\n"
+			printf "version\t\t$(cat /etc/debian_version) ($desc)\n"
+			printf "linux\t\t$kfile\n"
+			printf "initrd\t\t$ifile\n"
+			if [ -n "$dtb_name" ] ; then
+				printf "devicetree\t$dtb_name\n"
+			fi
+			printf "options\t\t$(get_kernel_cmdline)\n"
+			printf "linux-appendroot true\n"
+		} > "$tmpdir/debian.conf"
+		mkdir -p /loader/entries
+		mv "$tmpdir/debian.conf" /loader/entries/debian.conf
+	;;
 	"generic")
 		kernel="$kfile"
 		initrd="$ifile"

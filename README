@@ -182,8 +182,8 @@ The supported fields are:
   root= to the kernel.
 
 * Method: (optional) indicates how to support this particular machine;
-  the default is "generic"; other available methods are: android, multi,
-  redboot, slug, symlink
+  the default is "generic"; other available methods are: android, bootspec,
+  multi, redboot, slug, symlink
 
 * Boot-Device: (optional) block device to mount before installing
   kernel,  initrd and U-Boot script; Boot-Kernel-Path, Boot-Initrd-Path and
