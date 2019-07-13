@@ -1408,6 +1408,13 @@ DTB-Id: sun8i-a23-polaroid-mid2809pxe04.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: Purism Librem 5 devkit
+Kernel-Flavors: arm64
+DTB-Id: imx8mq-librem5-devkit.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Q8 A13 Tablet
 Kernel-Flavors: armmp
 Boot-Script-Path: /boot/boot.scr
