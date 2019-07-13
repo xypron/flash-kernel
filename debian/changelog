@@ -1,3 +1,9 @@
+flash-kernel (3.100) UNRELEASED; urgency=medium
+
+  * Add support for bootspec entries (bootable by barebox). (Closes: #931953)
+
+ -- Uwe Kleine-König <ukleinek@debian.org>  Fri, 12 Jul 2019 22:36:52 +0200
+
 flash-kernel (3.99) unstable; urgency=medium
 
   [ Domenico Andreoli ]
