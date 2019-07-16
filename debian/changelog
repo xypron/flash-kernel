@@ -4,7 +4,7 @@ flash-kernel (3.100) UNRELEASED; urgency=medium
   * Add support for bootspec entries (bootable by barebox). (Closes: #931953)
 
   [ Guido Günther ]
-  * Add support for Librem 5 devkit
+  * Add support for Librem 5 devkit (Closes: #927700)
 
  -- Uwe Kleine-König <ukleinek@debian.org>  Fri, 12 Jul 2019 22:36:52 +0200
 
