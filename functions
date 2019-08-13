@@ -903,12 +903,11 @@ case "$method" in
 		android_flash "$part"
 	;;
 	"bootspec")
-		[ -n "$ifile" ] || error "Initrd required for bootspec method"
 		{
 			printf "title\t\tDebian\n"
 			printf "version\t\t$(cat /etc/debian_version) ($desc)\n"
 			printf "linux\t\t$kfile\n"
-			printf "initrd\t\t$ifile\n"
+			[ -z "$ifile" ] || printf "initrd\t\t$ifile\n"
 			if [ -n "$dtb_name" ] ; then
 				printf "devicetree\t$dtbfile\n"
 			fi
