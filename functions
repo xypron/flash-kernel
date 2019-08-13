@@ -613,9 +613,11 @@ handle_dtb() {
 		return
 	fi
 
+	dtbfile="/boot/dtbs/$kvers/$dtb_dir/$dtb_name"
+
 	local dtb
 	if [ "x$FK_KERNEL_HOOK_SCRIPT" = "xpostrm.d" ] ; then
-		rm -f "/boot/dtbs/$kvers/$dtb_dir/$dtb_name"
+		rm -f "$dtbfile"
 
 		# This was the old name we installed under. We
 		# currently include it as an alternative symlink.
@@ -639,12 +641,10 @@ handle_dtb() {
 		fi
 	else
 		local dtb=$(find_dtb_file)
-		echo "Installing $dtb into /boot/dtbs/$kvers/$dtb_dir/$dtb_name" >&2
+		echo "Installing $dtb into $dtbfile" >&2
 		mkdir -p "/boot/dtbs/$kvers/$dtb_dir"
-		cp "$dtb" "/boot/dtbs/$kvers/$dtb_dir/$dtb_name.new"
-		backup_and_install \
-			"/boot/dtbs/$kvers/$dtb_dir/$dtb_name.new" \
-			"/boot/dtbs/$kvers/$dtb_dir/$dtb_name"
+		cp "$dtb" "$dtbfile.new"
+		backup_and_install "$dtbfile.new" "$dtbfile"
 
 		if [ "$dtb_dir" != "." ]; then
 			ln -nfs "$dtb_dir/$dtb_name" "/boot/dtbs/$kvers/$dtb_name"
@@ -904,7 +904,7 @@ case "$method" in
 			printf "linux\t\t$kfile\n"
 			printf "initrd\t\t$ifile\n"
 			if [ -n "$dtb_name" ] ; then
-				printf "devicetree\t$dtb_name\n"
+				printf "devicetree\t$dtbfile\n"
 			fi
 			printf "options\t\t$(get_kernel_cmdline)\n"
 			printf "linux-appendroot true\n"
