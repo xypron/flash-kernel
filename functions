@@ -498,10 +498,13 @@ mkimage_multi() {
 	local kdata="$3"
 	local idata="$4"
 	local umulti="$5"
+	local images="$kdata"
+
+	[ -z "$idata" ] || images="$images:$idata"
 
 	printf "Generating u-boot image..." >&2
 	mkimage -A "$mkarch" -O linux -T multi -C none -a "$maddr" -e "$maddr" \
-		-n "$mdesc" -d "$kdata:$idata" "$umulti" >&2 1>/dev/null
+		-n "$mdesc" -d "$images" "$umulti" >&2 1>/dev/null
 	echo "done." >&2
 }
 
@@ -918,7 +921,6 @@ case "$method" in
 		mv "$tmpdir/debian.conf" /loader/entries/debian.conf
 	;;
 	"generic")
-		[ -n "$ifile" ] || error "Initrd required for generic method"
 		kernel="$kfile"
 		initrd="$ifile"
 		if [ "$dtb_append" = "yes" ]; then
@@ -972,11 +974,13 @@ case "$method" in
 			backup_and_install "$tmpdir/uImage" "$boot_multi_path"
 		fi
 		if [ -n "$uiaddr" ]; then
+			[ -n "$ifile" ] || error "Initrd required for generic method with Initrd-Adress"
 			mkimage_initrd "$uiaddr" "$idesc" "$initrd" \
 				"$tmpdir/uInitrd"
 			initrd="$tmpdir/uInitrd"
 		fi
 		if [ -n "$boot_initrd_path" ]; then
+			[ -n "$ifile" ] || error "Initrd required for generic method with Boot-Initrd-Path"
 			boot_initrd_path="$boot_mnt_dir/$boot_initrd_path"
 			if [ "$boot_initrd_path_version" = "yes" ]; then
 			   boot_initrd_path="${boot_initrd_path}-${kvers}"
@@ -988,6 +992,7 @@ case "$method" in
 			fi
 			backup_and_install "$initrd" "$boot_initrd_path"
 		elif [ -n "$imtd" ]; then
+			[ -n "$ifile" ] || error "Initrd required for generic method with Mtd-Initrd"
 			ipad=0
 			# padding isn't needed for U-Boot images
 			if [ -z "$uiaddr" ]; then
