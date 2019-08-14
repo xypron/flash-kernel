@@ -1108,6 +1108,24 @@ case "$method" in
 		} > "$imtd" || error "failed."
 		echo "done." >&2
 	;;
+	"olpc")
+		[ -n "$ifile" ] || error "Initrd required for olpc method"
+		local olpcfth="$(mktemp --tmpdir=$tmpdir)"
+		local olpc_boot_dir="$(findmnt -n --output target --target /boot)"
+		local kernel="$(realpath --relative-to=$olpc_boot_dir $kfile |sed 's!/!\\\\!')"
+		local initrd="$(realpath --relative-to=$olpc_boot_dir $ifile |sed 's!/!\\\\!')"
+
+		printf "Generating olpc.fth... " >&2
+		sed -e "s!@@KERNEL@@!$kernel!g" \
+		    -e "s!@@INITRD@@!$initrd!g" \
+		    -e "s!@@LINUX_KERNEL_CMDLINE@@!$(get_kernel_cmdline)!g" \
+		    -e "s!@@LINUX_KERNEL_CMDLINE_DEFAULTS@@!$(get_kernel_cmdline_defaults)!g" \
+			< "$BOOTSCRIPTS_DIR/olpc.fth" > $olpcfth
+		mkdir -p "$olpc_boot_dir/boot"
+		echo "done." >&2
+
+		backup_and_install "$olpcfth" "$olpc_boot_dir/boot/olpc.fth"
+	;;
 esac
 }
 

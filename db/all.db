@@ -1864,3 +1864,7 @@ Boot-Script-Path: /boot/boot.scr
 DTB-Id: sun6i-a31s-yones-toptech-bs1078-v2.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
+
+Machine: OLPC XO-1.75
+Kernel-Flavors: armmp
+Method: olpc
