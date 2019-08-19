@@ -36,6 +36,10 @@ ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	FK_CHECKOUT=. ./test_db
 	FK_CHECKOUT=. ./test_flash-kernel
 	FK_CHECKOUT=. ./test_functions
+
+# check alphabetic ordering of database
+# The key for each entry is its first Machine: line
+	awk '/^$$/ { seen=0 } seen == 0 && /^Machine: / { seen=1; print }' db/all.db | LC_ALL=C sort --check --ignore-case
 endif
 
 %:
