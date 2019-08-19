@@ -7,63 +7,9 @@ initramfs directly from /boot.  flash-kernel supports devices that
 boot from flash memory (hence the name) as well as some devices that
 require a special boot image on the disk.
 
-Supported systems
-- - - - - - - - -
-
-The following systems are supported:
-
- - APM X-Gene Mustang board
- - Buffalo Linkstation Live
- - Buffalo Linkstation Live, version 3 (LS-CHL)
- - Buffalo Linkstation Live with BitTorrent (LS-CHLv2)
- - Buffalo Linkstation LS-QVL
- - Buffalo Linkstation LS-VL
- - Buffalo Linkstation LS-WSXL
- - Buffalo Linkstation LS-WTGL
- - Buffalo Linkstation LS-WVL
- - Buffalo Linkstation LS-WXL
- - Buffalo Linkstation Mini (LS-WSGL)
- - Buffalo Linkstation Pro (LS-GL)
- - Buffalo Linkstation Pro (LS-XHL)
- - Buffalo/Revogear Kurobox Pro
- - D-Link DNS-323
- - Genesi Efika Nettop
- - Genesi Efika Smartbook
- - GLAN Tank
- - GuruPlug
- - HP t5325 Thin Client
- - HP Media Vault mv2120
- - Intel SS4000-E
- - LaCie 2Big Network v2
- - LaCie 5Big Network v2
- - LaCie Internet Space v2
- - LaCie Network Space v2
- - LaCie Network Space Max v2
- - LaCie d2 Network v2
- - Linksys NSLU2
- - Marvell DB-78x00-BP Development Board
- - Marvell OpenRD-Base
- - Marvell OpenRD-Client
- - Marvell OpenRD-Ultimate
- - Neo FreeRunner (GTA02)
- - PlatHome OpenBlocks AX3-4 board
- - Plat'Home OpenBlocks A6
- - QNAP TS-109
- - QNAP TS-110 Turbo NAS
- - QNAP TS-119 Turbo NAS
- - QNAP TS-209
- - QNAP TS-210 Turbo NAS
- - QNAP TS-219 and TS-219P Turbo NAS
- - QNAP TS-409
- - QNAP TS-410 and TS-410U Turbo NAS
- - QNAP TS-419P and TS-419U Turbo NAS
- - Seagate FreeAgent DockStar
- - Seagate NAS (2 and 4 bay)
- - Seagate Personal Cloud (1 and 2 bay)
- - SheevaPlug
- - SheevaPlug eSATA
- - Thecus N2100
- - Toshiba AC100
+Check the Database file db/all.db (in the source package) or
+/usr/share/flash-kernel/db/all.db (in the installed package) for supported
+machines.
 
 If you would like to see support for another device, please file a bug
 report in the Debian Bug Tracking System and include all information
