@@ -498,10 +498,13 @@ mkimage_multi() {
 	local kdata="$3"
 	local idata="$4"
 	local umulti="$5"
+	local images="$kdata"
+
+	[ -z "$idata" ] || images="$images:$idata"
 
 	printf "Generating u-boot image..." >&2
 	mkimage -A "$mkarch" -O linux -T multi -C none -a "$maddr" -e "$maddr" \
-		-n "$mdesc" -d "$kdata:$idata" "$umulti" >&2 1>/dev/null
+		-n "$mdesc" -d "$images" "$umulti" >&2 1>/dev/null
 	echo "done." >&2
 }
 
@@ -753,7 +756,11 @@ ifile="/boot/initrd.img-$kvers"
 desc="kernel $kvers"
 idesc="ramdisk $kvers"
 
-if [ ! -e $kfile ] || [ ! -e $ifile ]; then
+if [ ! -e "$ifile" ]; then
+	ifile=
+fi
+
+if [ ! -e $kfile ]; then
 	# installation-report #781742 included:
 	#     Can't find /boot/vmlinuz-[...] or /boot/initrd.img-[...]
 	#
@@ -765,10 +772,10 @@ if [ ! -e $kfile ] || [ ! -e $ifile ]; then
 		ls -l $kfile*
 		ls -l $ifile*
 	) >> /tmp/flash-kernel-no-kernel-error.log 2>&1 || :
-	error "Can't find $kfile or $ifile (see /tmp/flash-kernel-no-kernel-error.log)"
+	error "Can't find $kfile (see /tmp/flash-kernel-no-kernel-error.log)"
 fi
 kfilesize=$(stat -c '%s' "$kfile")
-ifilesize=$(stat -c '%s' "$ifile")
+[ -z "$ifile" ] || ifilesize=$(stat -c '%s' "$ifile")
 
 if [ -L "$kfile" ]; then
 	kfile=$(readlink -e "$kfile")
@@ -880,6 +887,7 @@ tmpdir="$(mktemp -dt "$self.XXXXXXXX")"
 
 case "$method" in
 	"android")
+		[ -n "$ifile" ] || error "Initrd required for android method"
 		part=""
 		largest_size="-1"
 		for p in "$android_boot_device"*[0-9]; do
@@ -902,7 +910,7 @@ case "$method" in
 			printf "title\t\tDebian\n"
 			printf "version\t\t$(cat /etc/debian_version) ($desc)\n"
 			printf "linux\t\t$kfile\n"
-			printf "initrd\t\t$ifile\n"
+			[ -z "$ifile" ] || printf "initrd\t\t$ifile\n"
 			if [ -n "$dtb_name" ] ; then
 				printf "devicetree\t$dtbfile\n"
 			fi
@@ -966,11 +974,13 @@ case "$method" in
 			backup_and_install "$tmpdir/uImage" "$boot_multi_path"
 		fi
 		if [ -n "$uiaddr" ]; then
+			[ -n "$ifile" ] || error "Initrd required for generic method with Initrd-Adress"
 			mkimage_initrd "$uiaddr" "$idesc" "$initrd" \
 				"$tmpdir/uInitrd"
 			initrd="$tmpdir/uInitrd"
 		fi
 		if [ -n "$boot_initrd_path" ]; then
+			[ -n "$ifile" ] || error "Initrd required for generic method with Boot-Initrd-Path"
 			boot_initrd_path="$boot_mnt_dir/$boot_initrd_path"
 			if [ "$boot_initrd_path_version" = "yes" ]; then
 			   boot_initrd_path="${boot_initrd_path}-${kvers}"
@@ -982,6 +992,7 @@ case "$method" in
 			fi
 			backup_and_install "$initrd" "$boot_initrd_path"
 		elif [ -n "$imtd" ]; then
+			[ -n "$ifile" ] || error "Initrd required for generic method with Mtd-Initrd"
 			ipad=0
 			# padding isn't needed for U-Boot images
 			if [ -z "$uiaddr" ]; then
@@ -1014,11 +1025,13 @@ case "$method" in
 		fi
 	;;
 	"symlink")
+		[ -n "$ifile" ] || error "Initrd required for symlink method"
 		rm -f /boot/initrd /boot/zImage
 		ln -s "$(basename "$ifile")" /boot/initrd
 		gen_kernel "$kfile" "/boot/zImage" "$machine_id"
 	;;
 	"multi")
+		[ -n "$ifile" ] || error "Initrd required for multi method"
 		gen_kernel "$kfile" "$tmpdir/kernel" ""
 		# Hack to work around a bug in some U-Boot versions:
 		if [ $(($(stat -c '%s' "$tmpdir/kernel") % 4)) -eq 0 ]; then
@@ -1030,11 +1043,13 @@ case "$method" in
 		backup_and_install "$tmpdir/uImage" "$boot_multi_path"
 	;;
 	"redboot")
+		[ -n "$ifile" ] || error "Initrd required for redboot method"
 		flash_kernel "$kfile" "$kmtd" "$machine_id"
 		pad=$(($imtdsize - $ifilesize))
 		flash_initrd "$ifile" "$imtd" $pad
 	;;
 	"slug")
+		[ -n "$ifile" ] || error "Initrd required for slug method"
 		case "$(dpkg --print-architecture)" in
 			arm|armel)
 				little_endian=1

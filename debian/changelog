@@ -3,6 +3,8 @@ flash-kernel (3.100) UNRELEASED; urgency=medium
   [ Uwe Kleine-König ]
   * Add support for bootspec entries (bootable by barebox). (Closes: #931953)
   * Fix a corner case that makes flash-kernel fail silently. (Closes: #932231)
+  * Make initrd optional for machines with Boot-Multi-Path. (Adresses:
+    #869073)
 
   [ Guido Günther ]
   * Add support for Librem 5 devkit (Closes: #927700)
