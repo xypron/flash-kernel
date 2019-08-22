@@ -9,6 +9,9 @@ flash-kernel (3.100) UNRELEASED; urgency=medium
   [ Guido Günther ]
   * Add support for Librem 5 devkit (Closes: #927700)
 
+  [ Lubomir Rintel]
+  * Add support for OLPC XO-1.75 laptops.
+
  -- Uwe Kleine-König <ukleinek@debian.org>  Fri, 12 Jul 2019 22:36:52 +0200
 
 flash-kernel (3.99) unstable; urgency=medium

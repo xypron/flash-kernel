@@ -130,7 +130,7 @@ The supported fields are:
 
 * Method: (optional) indicates how to support this particular machine;
   the default is "generic"; other available methods are: android, bootspec,
-  multi, redboot, slug, symlink
+  multi, redboot, slug, symlink and olpc
 
 * Boot-Device: (optional) block device to mount before installing
   kernel,  initrd and U-Boot script; Boot-Kernel-Path, Boot-Initrd-Path and

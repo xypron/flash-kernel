@@ -22,6 +22,10 @@ override_dh_auto_install:
 		install -m0644 bootscript/$${arch}/bootscr.* \
 			debian/flash-kernel/etc/flash-kernel/bootscript/ ; \
 	done
+ifeq (armhf,$(DEB_HOST_ARCH))
+	install -m0644 bootscript/$(DEB_HOST_ARCH)/olpc.fth \
+		debian/flash-kernel/etc/flash-kernel/bootscript/
+endif
 
 	dh_auto_install
 

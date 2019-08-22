@@ -1170,6 +1170,10 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: OLPC XO-1.75
+Kernel-Flavors: armmp
+Method: olpc
+
 Machine: OMAP4 Panda board
 Method: generic
 U-Boot-Kernel-Address: 0x80008000
