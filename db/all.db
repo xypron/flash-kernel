@@ -1177,6 +1177,13 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Olimex A64-Olinuxino-eMMC
+Kernel-Flavors: arm64
+DTB-Id: allwinner/sun50i-a64-olinuxino-emmc.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Olimex A64 Teres-I
 Kernel-Flavors: arm64
 DTB-Id: sun50i-a64-teres-i.dtb
