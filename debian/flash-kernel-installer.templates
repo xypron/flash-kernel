@@ -37,6 +37,7 @@ _Description: Generating boot image on disk...
 Template: debian-installer/flash-kernel-installer/title
 Type: text
 #  Main menu item
+#  Translators: keep below 55 columns
 # This item is a menu entry for a step where the system configures
 # the flashable memory used by many embedded devices
 # (writing the kernel and initrd to it)
