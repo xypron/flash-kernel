@@ -16,8 +16,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-06-29 08:15+0000\n"
+"Report-Msgid-Bugs-To: flash-kernel@packages.debian.org\n"
+"POT-Creation-Date: 2019-09-26 22:05+0000\n"
 "PO-Revision-Date: 2010-07-04 18:23+0100\n"
 "Last-Translator: Janos Guljas <janos@janos.in.rs>\n"
 "Language-Team: Serbian/Cyrillic\n"
@@ -75,6 +75,7 @@ msgstr "Генерисање покретачке слике на диске..."
 #. Type: text
 #. Description
 #. Main menu item
+#. Translators: keep below 55 columns
 #. This item is a menu entry for a step where the system configures
 #. the flashable memory used by many embedded devices
 #. (writing the kernel and initrd to it)

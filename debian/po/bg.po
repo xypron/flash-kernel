@@ -33,8 +33,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-06-29 08:15+0000\n"
+"Report-Msgid-Bugs-To: flash-kernel@packages.debian.org\n"
+"POT-Creation-Date: 2019-09-26 22:05+0000\n"
 "PO-Revision-Date: 2012-02-25 18:10+0200\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Български <dict@fsa-bg.org>\n"
@@ -93,6 +93,7 @@ msgstr "Създаване на образ за първоначално зар�
 #. Type: text
 #. Description
 #. Main menu item
+#. Translators: keep below 55 columns
 #. This item is a menu entry for a step where the system configures
 #. the flashable memory used by many embedded devices
 #. (writing the kernel and initrd to it)

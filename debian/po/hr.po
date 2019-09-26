@@ -21,8 +21,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-06-29 08:15+0000\n"
+"Report-Msgid-Bugs-To: flash-kernel@packages.debian.org\n"
+"POT-Creation-Date: 2019-09-26 22:05+0000\n"
 "PO-Revision-Date: 2019-07-04 17:02+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -82,6 +82,7 @@ msgstr "Stvaranje slike pokretanja na disku..."
 #. Type: text
 #. Description
 #. Main menu item
+#. Translators: keep below 55 columns
 #. This item is a menu entry for a step where the system configures
 #. the flashable memory used by many embedded devices
 #. (writing the kernel and initrd to it)

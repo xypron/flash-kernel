@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_ne\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-06-29 08:15+0000\n"
+"Report-Msgid-Bugs-To: flash-kernel@packages.debian.org\n"
+"POT-Creation-Date: 2019-09-26 22:05+0000\n"
 "PO-Revision-Date: 2011-02-22 17:11-0600\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -77,6 +77,7 @@ msgstr "डिस्कमा बुट इमेज उत्पन्न ग�
 #. Type: text
 #. Description
 #. Main menu item
+#. Translators: keep below 55 columns
 #. This item is a menu entry for a step where the system configures
 #. the flashable memory used by many embedded devices
 #. (writing the kernel and initrd to it)
