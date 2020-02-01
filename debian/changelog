@@ -1,4 +1,6 @@
-flash-kernel (3.100) UNRELEASED; urgency=medium
+flash-kernel (3.100) unstable; urgency=medium
+
+  * Team upload
 
   [ Uwe Kleine-König ]
   * Add support for bootspec entries (bootable by barebox). (Closes: #931953)
@@ -16,7 +18,11 @@ flash-kernel (3.100) UNRELEASED; urgency=medium
   * Add comment for translators, to keep main menu entry below a 55 columns
     limit. This updates all po|pot files.
 
- -- Holger Wansing <hwansing@mailbox.org>  Fri, 27 Sep 2019 01:24:32 +0200
+  [ Updated translations ]
+  * Croatian (hr.po) by gogogogi
+  * Marathi (mr.po) by Prachi Joshi
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sat, 01 Feb 2020 07:19:22 +0100
 
 flash-kernel (3.99) unstable; urgency=medium
 
