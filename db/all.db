@@ -622,6 +622,13 @@ DTB-Id: sun8i-a23-inet86dz.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: INet-86V Rev 02
+Kernel-Flavors: armmp
+Boot-Script-Path: /boot/boot.scr
+DTB-Id: sun5i-a13-inet-86v-rev2.dtb
+U-Boot-Script-Name: bootscr.sunxi
+Required-Packages: u-boot-tools
+
 Machine: INet-97F Rev 02
 Kernel-Flavors: armmp
 Boot-Script-Path: /boot/boot.scr
