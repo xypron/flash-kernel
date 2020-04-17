@@ -13,6 +13,10 @@ flash-kernel (3.101) UNRELEASED; urgency=medium
   * Add entry for Olimex A64-Olinuxino (Closes: #931195)
   * Add entry for Olimex A64-Olinuxino-eMMC (Closes: #931195)
 
+  [ Josua Mayer ]
+  * add db entries for SolidRun LX2160A Honeycomb and Clearfog CX.
+    (Closes: #958023)
+
  -- Vagrant Cascadian <vagrant@debian.org>  Mon, 30 Mar 2020 11:59:14 -0700
 
 flash-kernel (3.100) unstable; urgency=medium

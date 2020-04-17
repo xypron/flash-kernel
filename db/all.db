@@ -1723,6 +1723,20 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: SolidRun LX2160A Clearfog CX
+Kernel-Flavors: arm64
+DTB-Id: freescale/fsl-lx2160a-clearfog-cx.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: SolidRun LX2160A Honeycomb
+Kernel-Flavors: arm64
+DTB-Id: freescale/fsl-lx2160a-honeycomb.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Theobroma Systems RK3399-Q7 SoM
 Kernel-Flavors: arm64
 DTB-Id: rockchip/rk3399-puma-haikou.dtb
