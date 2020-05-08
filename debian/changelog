@@ -9,6 +9,10 @@ flash-kernel (3.101) UNRELEASED; urgency=medium
   [ Adam Borowski ]
   * Add support for Pinebook (Closes: #930098)
 
+  [ Sunil Mohan Adapa ]
+  * Add entry for Olimex A64-Olinuxino (Closes: #931195)
+  * Add entry for Olimex A64-Olinuxino-eMMC (Closes: #931195)
+
  -- Vagrant Cascadian <vagrant@debian.org>  Mon, 30 Mar 2020 11:59:14 -0700
 
 flash-kernel (3.100) unstable; urgency=medium
