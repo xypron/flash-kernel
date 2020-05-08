@@ -1214,6 +1214,13 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Pine64 Pinebook Pro
+Kernel-Flavors: arm64
+DTB-Id: rockchip/rk3399-pinebook-pro.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Pine64 Rock64
 Kernel-Flavors: arm64
 DTB-Id: rockchip/rk3328-rock64.dtb
