@@ -6,6 +6,9 @@ flash-kernel (3.101) UNRELEASED; urgency=medium
   [ Vagrant Cascadian ]
   * Add support for Pinebook Pro.
 
+  [ Adam Borowski ]
+  * Add support for Pinebook (Closes: #930098)
+
  -- Vagrant Cascadian <vagrant@debian.org>  Mon, 30 Mar 2020 11:59:14 -0700
 
 flash-kernel (3.100) unstable; urgency=medium

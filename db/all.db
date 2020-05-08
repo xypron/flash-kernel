@@ -1254,6 +1254,13 @@ Boot-Initrd-Path: /boot/uInitrd
 Boot-DTB-Path: /boot/dtb
 Required-Packages: u-boot-tools
 
+Machine: Pinebook
+Kernel-Flavors: arm64
+DTB-Id: allwinner/sun50i-a64-pinebook.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: PlatHome OpenBlocks AX3-4 board
 Kernel-Flavors: armmp armmp-lpae
 DTB-Id: armada-xp-openblocks-ax3-4.dtb
