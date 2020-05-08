@@ -16,6 +16,8 @@ flash-kernel (3.101) UNRELEASED; urgency=medium
   [ Josua Mayer ]
   * add db entries for SolidRun LX2160A Honeycomb and Clearfog CX.
     (Closes: #958023)
+  * Add entries for SolidRun Cubox-i Solo/DualLite variants.
+    (Closes: #939261)
 
  -- Vagrant Cascadian <vagrant@debian.org>  Mon, 30 Mar 2020 11:59:14 -0700
 
