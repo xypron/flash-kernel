@@ -1806,6 +1806,13 @@ Method: android
 Android-Boot-Device: /dev/mmcblk0
 Required-Packages: abootimg
 
+Machine: CZ.NIC Turris Mox Board
+Kernel-Flavors: arm64
+Boot-Script-Path: /boot/boot.scr
+DTB-Id: marvell/armada-3720-turris-mox.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Udoo i.MX6 Dual-lite Board
 Kernel-Flavors: armmp
 DTB-Id: imx6dl-udoo.dtb
