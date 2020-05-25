@@ -19,6 +19,9 @@ flash-kernel (3.101) UNRELEASED; urgency=medium
   * Add entries for SolidRun Cubox-i Solo/DualLite variants.
     (Closes: #939261)
 
+  [ Domenico Andreoli ]
+  * Add entry for Turris MOX (Closes: #961303)
+
  -- Vagrant Cascadian <vagrant@debian.org>  Mon, 30 Mar 2020 11:59:14 -0700
 
 flash-kernel (3.100) unstable; urgency=medium
