@@ -323,6 +323,13 @@ DTB-Id: sun8i-a83t-cubietruck-plus.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: CZ.NIC Turris Mox Board
+Kernel-Flavors: arm64
+Boot-Script-Path: /boot/boot.scr
+DTB-Id: marvell/armada-3720-turris-mox.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: D-Link DNS-320 NAS (Rev A1)
 Kernel-Flavors: kirkwood marvell
 DTB-Id: kirkwood-dns320.dtb
@@ -434,18 +441,18 @@ DTB-Id: allwinner/sun50i-h5-nanopi-neo2.dtb
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
-Machine: FriendlyARM NanoPi NEO Plus2
-Kernel-Flavors: arm64
-Boot-Script-Path: /boot/boot.scr
-DTB-Id: allwinner/sun50i-h5-nanopi-neo-plus2.dtb
-U-Boot-Script-Name: bootscr.uboot-generic
-Required-Packages: u-boot-tools
-
 Machine: FriendlyARM NanoPi NEO Air
 Kernel-Flavors: armmp armmp-lpae
 Boot-Script-Path: /boot/boot.scr
 DTB-Id: sun8i-h3-nanopi-neo-air.dtb
 U-Boot-Script-Name: bootscr.sunxi
+Required-Packages: u-boot-tools
+
+Machine: FriendlyARM NanoPi NEO Plus2
+Kernel-Flavors: arm64
+Boot-Script-Path: /boot/boot.scr
+DTB-Id: allwinner/sun50i-h5-nanopi-neo-plus2.dtb
+U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
 Machine: Gemei G9 Tablet
@@ -1177,6 +1184,13 @@ DTB-Id: sun8i-a33-olinuxino.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: Olimex A64 Teres-I
+Kernel-Flavors: arm64
+DTB-Id: sun50i-a64-teres-i.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Olimex A64-Olinuxino
 Kernel-Flavors: arm64
 DTB-Id: allwinner/sun50i-a64-olinuxino.dtb
@@ -1187,13 +1201,6 @@ Required-Packages: u-boot-tools
 Machine: Olimex A64-Olinuxino-eMMC
 Kernel-Flavors: arm64
 DTB-Id: allwinner/sun50i-a64-olinuxino-emmc.dtb
-Boot-Script-Path: /boot/boot.scr
-U-Boot-Script-Name: bootscr.uboot-generic
-Required-Packages: u-boot-tools
-
-Machine: Olimex A64 Teres-I
-Kernel-Flavors: arm64
-DTB-Id: sun50i-a64-teres-i.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
@@ -1256,6 +1263,13 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Pinebook
+Kernel-Flavors: arm64
+DTB-Id: allwinner/sun50i-a64-pinebook.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: PineRiver Mini X-Plus
 Kernel-Flavors: armmp
 Boot-Script-Path: /boot/boot.scr
@@ -1273,13 +1287,6 @@ Boot-Device: /dev/sda1
 Boot-Kernel-Path: /boot/uImage
 Boot-Initrd-Path: /boot/uInitrd
 Boot-DTB-Path: /boot/dtb
-Required-Packages: u-boot-tools
-
-Machine: Pinebook
-Kernel-Flavors: arm64
-DTB-Id: allwinner/sun50i-a64-pinebook.dtb
-Boot-Script-Path: /boot/boot.scr
-U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
 Machine: PlatHome OpenBlocks AX3-4 board
@@ -1812,13 +1819,6 @@ Machine: Toshiba AC100 / Dynabook AZ
 Method: android
 Android-Boot-Device: /dev/mmcblk0
 Required-Packages: abootimg
-
-Machine: CZ.NIC Turris Mox Board
-Kernel-Flavors: arm64
-Boot-Script-Path: /boot/boot.scr
-DTB-Id: marvell/armada-3720-turris-mox.dtb
-U-Boot-Script-Name: bootscr.uboot-generic
-Required-Packages: u-boot-tools
 
 Machine: Udoo i.MX6 Dual-lite Board
 Kernel-Flavors: armmp
