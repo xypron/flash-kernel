@@ -22,6 +22,9 @@ flash-kernel (3.101) UNRELEASED; urgency=medium
   [ Domenico Andreoli ]
   * Add entry for Turris MOX (Closes: #961303)
 
+  [ Holger Wansing ]
+  * Remove trailing whitespaces in changelog file, to fix lintian tag.
+
  -- Vagrant Cascadian <vagrant@debian.org>  Mon, 30 Mar 2020 11:59:14 -0700
 
 flash-kernel (3.100) unstable; urgency=medium
@@ -1094,7 +1097,7 @@ flash-kernel (3.21) unstable; urgency=medium
     (Closes: #750953)
   * Document FK_MACHINE in the manpage. (Closes: #751012)
   * Document /etc/flash-kernel/machine and the database files in the manpage.
-  * Add kernel command line configuration support to sunxi bootscript. 
+  * Add kernel command line configuration support to sunxi bootscript.
 
   [ Karsten Merker ]
   * Add machine db entries for various sunxi-based systems
@@ -1138,7 +1141,7 @@ flash-kernel (3.19) unstable; urgency=low
 flash-kernel (3.18) unstable; urgency=medium
 
   [ Ian Campbell ]
-  * Add --force option to install a specific kernel version. 
+  * Add --force option to install a specific kernel version.
   * Add support for the Cubietruck.
   * Copy the dtb (if any) to /boot/dtb-$kversion in kernel postinst hook.
   * Allow use of the kernel version in boot scripts.
@@ -1339,8 +1342,8 @@ flash-kernel (3.1~exp.1) experimental; urgency=low
   * Add support for DreamPlug. (Closes: #667681)
 
   [ Hector Oron ]
-  * Update Standards-Version to 3.9.3 
-  * Set Boot-Device for Dreamplug to /dev/sda1. 
+  * Update Standards-Version to 3.9.3
+  * Set Boot-Device for Dreamplug to /dev/sda1.
 
   [ Updated translations ]
   * Galician (gl.po) by Jorge Barreiro
@@ -1377,7 +1380,7 @@ flash-kernel (3.0~rc.5) unstable; urgency=low
 
 flash-kernel (3.0~rc.4) unstable; urgency=low
 
-  * Upload to unstable 
+  * Upload to unstable
 
  -- Hector Oron <zumbi@debian.org>  Sun, 11 Mar 2012 14:51:15 +0000
 
@@ -2213,4 +2216,3 @@ flash-kernel (0.1) unstable; urgency=low
   * Fix i386 build issue.
 
  -- Martin Michlmayr <tbm@cyrius.com>  Tue, 26 Sep 2006 15:14:51 +0200
-
