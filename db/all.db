@@ -1256,6 +1256,27 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Pine64 RockPro64
+Kernel-Flavors: arm64
+DTB-Id: rockchip/rk3399-rockpro64.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Pine64 RockPro64 v2.0
+Kernel-Flavors: arm64
+DTB-Id: rockchip/rk3399-rockpro64-v2.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Pine64 RockPro64 v2.1
+Kernel-Flavors: arm64
+DTB-Id: rockchip/rk3399-rockpro64.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Pine64+
 Kernel-Flavors: arm64
 DTB-Id: allwinner/sun50i-a64-pine64-plus.dtb
