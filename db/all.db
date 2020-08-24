@@ -1343,6 +1343,13 @@ DTB-Id: sun8i-a23-polaroid-mid2809pxe04.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: Purism Librem 5 devkit
+Kernel-Flavors: arm64
+DTB-Id: imx8mq-librem5-devkit.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Purism Librem 5r2
 Kernel-Flavors: any
 DTB-Id: imx8mq-librem5-r2.dtb
@@ -1357,13 +1364,6 @@ Kernel-Flavors: any
 DTB-Id: imx8mq-librem5-r3.dtb
 Boot-Initrd-Path: /boot/initrd.img
 Boot-Kernel-Path: /boot/vmlinuz
-Boot-Script-Path: /boot/boot.scr
-U-Boot-Script-Name: bootscr.uboot-generic
-Required-Packages: u-boot-tools
-
-Machine: Purism Librem 5 devkit
-Kernel-Flavors: arm64
-DTB-Id: imx8mq-librem5-devkit.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
