@@ -487,7 +487,7 @@ Required-Packages: u-boot-tools
 Bootloader-Sets-Incorrect-Root: yes
 
 Machine: Globalscale Marvell ESPRESSOBin Board
-DTB-Id: armada-3720-espressobin.dtb
+DTB-Id: marvell/armada-3720-espressobin.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
@@ -874,7 +874,7 @@ Required-Packages: u-boot-tools
 
 Machine: Marvell Armada 8040 DB board
 Kernel-Flavors: arm64
-DTB-Id: armada-8040-db.dtb
+DTB-Id: marvell/armada-8040-db.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
@@ -1186,7 +1186,7 @@ Required-Packages: u-boot-tools
 
 Machine: Olimex A64 Teres-I
 Kernel-Flavors: arm64
-DTB-Id: sun50i-a64-teres-i.dtb
+DTB-Id: allwinner/sun50i-a64-teres-i.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
@@ -1345,7 +1345,7 @@ Required-Packages: u-boot-tools
 
 Machine: Purism Librem 5 devkit
 Kernel-Flavors: arm64
-DTB-Id: imx8mq-librem5-devkit.dtb
+DTB-Id: freescale/imx8mq-librem5-devkit.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
