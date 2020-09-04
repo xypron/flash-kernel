@@ -492,6 +492,24 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Globalscale Marvell ESPRESSOBin Board (eMMC)
+DTB-Id: marvell/armada-3720-espressobin-emmc.dts
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Globalscale Marvell ESPRESSOBin Board V7
+DTB-Id: marvell/armada-3720-espressobin-v7.dts
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Globalscale Marvell ESPRESSOBin Board V7 (eMMC)
+DTB-Id: marvell/armada-3720-espressobin-v7-emmc.dts
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Globalscale Mirabox
 Kernel-Flavors: armmp
 DTB-Id: armada-370-mirabox.dtb
