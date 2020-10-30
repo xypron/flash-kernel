@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: flash-kernel@packages.debian.org\n"
 "POT-Creation-Date: 2019-09-26 22:05+0000\n"
-"PO-Revision-Date: 2020-10-23 16:26+0000\n"
+"PO-Revision-Date: 2020-10-29 17:30+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan (post 1500) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "Language: oc\n"
@@ -31,9 +31,8 @@ msgstr ""
 #. some flashable memory used by many embedded devices
 #. :sl4:
 #: ../flash-kernel-installer.templates:1001
-#, fuzzy
 msgid "Configuring flash memory to boot the system"
-msgstr "Configuracion del sistèma de basa"
+msgstr "Configuracion de la memòria flash del sistèma d’aviada"
 
 #. Type: text
 #. Description
@@ -50,9 +49,8 @@ msgstr "Rendre lo sistèma aviable"
 #. on a flashable memory
 #. :sl4:
 #: ../flash-kernel-installer.templates:3001
-#, fuzzy
 msgid "Preparing the system..."
-msgstr "Descompression del sistèma de basa..."
+msgstr "Preparacion del sistèma..."
 
 #. Type: text
 #. Description
@@ -60,9 +58,8 @@ msgstr "Descompression del sistèma de basa..."
 #. write the kernel to the flashable memory of the embedded device
 #. :sl4:
 #: ../flash-kernel-installer.templates:4001
-#, fuzzy
 msgid "Writing the kernel to flash memory..."
-msgstr "Causida del nucli d'installar dins /target/..."
+msgstr "Escritura del nuclèu sus la memòria flash..."
 
 #. Type: text
 #. Description
@@ -72,7 +69,7 @@ msgstr "Causida del nucli d'installar dins /target/..."
 #. :sl4:
 #: ../flash-kernel-installer.templates:5001
 msgid "Generating boot image on disk..."
-msgstr ""
+msgstr "Generacion de l’imatge d’aviada sul disc..."
 
 #. Type: text
 #. Description
@@ -83,6 +80,5 @@ msgstr ""
 #. (writing the kernel and initrd to it)
 #. :sl4:
 #: ../flash-kernel-installer.templates:6001
-#, fuzzy
 msgid "Make the system bootable"
-msgstr "Modificar pas lo sistèma de fichièrs"
+msgstr "Rendre lo sistèma aviable"
