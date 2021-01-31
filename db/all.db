@@ -1235,6 +1235,13 @@ DTB-Id: sun7i-a20-orangepi-mini.dtb
 U-Boot-Script-Name: bootscr.sunxi
 Required-Packages: u-boot-tools
 
+Machine: OrangePi One Plus
+Kernel-Flavors: arm64
+DTB-Id: allwinner/sun50i-h6-orangepi-one-plus.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: PHICOMM N1
 Kernel-Flavors: arm64
 DTB-Id: amlogic/meson-gxl-s905d-phicomm-n1.dtb
