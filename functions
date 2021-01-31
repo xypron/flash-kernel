@@ -787,7 +787,7 @@ if ! check_supported "$machine"; then
 		echo "Unsupported platform on EFI system, doing nothing."
 		exit 0
 	fi
-	error "Unsupported platform."
+	error "Unsupported platform '$machine'."
 fi
 
 kfile_suffix=""
