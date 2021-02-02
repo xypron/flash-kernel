@@ -1465,6 +1465,27 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Radxa ROCK Pi 4A
+Kernel-Flavors: arm64
+DTB-Id: rockchip/rk3399-rock-pi-4a.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Radxa ROCK Pi 4B
+Kernel-Flavors: arm64
+DTB-Id: rockchip/rk3399-rock-pi-4b.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Radxa ROCK Pi 4C
+Kernel-Flavors: arm64
+DTB-Id: rockchip/rk3399-rock-pi-4c.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Raspberry Pi 1 Compute Module
 Kernel-Flavors: rpi
 DTB-Id: bcm2835-rpi-cm1-io1.dtb
