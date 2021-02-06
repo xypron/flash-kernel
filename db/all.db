@@ -493,19 +493,19 @@ U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
 Machine: Globalscale Marvell ESPRESSOBin Board (eMMC)
-DTB-Id: marvell/armada-3720-espressobin-emmc.dts
+DTB-Id: marvell/armada-3720-espressobin-emmc.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
 Machine: Globalscale Marvell ESPRESSOBin Board V7
-DTB-Id: marvell/armada-3720-espressobin-v7.dts
+DTB-Id: marvell/armada-3720-espressobin-v7.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
 Machine: Globalscale Marvell ESPRESSOBin Board V7 (eMMC)
-DTB-Id: marvell/armada-3720-espressobin-v7-emmc.dts
+DTB-Id: marvell/armada-3720-espressobin-v7-emmc.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
@@ -1597,7 +1597,7 @@ Required-Packages: u-boot-tools
 
 Machine: Rockchip RK3399 Evaluation Board
 Kernel-Flavors: arm64
-DTB-Id: rockchip/rk3399-evb.dts
+DTB-Id: rockchip/rk3399-evb.dtb
 Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
