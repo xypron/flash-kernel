@@ -1,3 +1,31 @@
+flash-kernel (3.104) unstable; urgency=medium
+
+  [ Guido Günther ]
+  * functions: Tell user which platform is unsupported
+
+  [ harry88 ]
+  * Add support for Orange Pi One Plus (Closes: #981328).
+
+  [ Jiri Kastner ]
+  * Adding ROCK pi 4 (A,B,C)
+
+  [ Andre Heider ]
+  * Add missing ESPRESSObin variants (Closes: #969518)
+
+  [ Vagrant Cascadian ]
+  * all.db: Fix several DTB-Id entries that incorrectly referenced the
+    .dts instead of .dtb file. Thanks to harry88.
+  * Add support for Banana Pi BPI-M2-Ultra. Thanks to Bernhard.
+    (Closes: #982089)
+  * Add support for Banana Pi BPI-M3.  Thanks to Bernhard.
+    (Closes: #981561)
+  * Update to debhelper-compat 13.
+  * Drop explicit setting of DEB_HOST_ARCH, should be set by dpkg.
+  * debian/triggers: use noawait variant.
+  * Update Standards-Version to 4.5.1, no changes needed.
+
+ -- Vagrant Cascadian <vagrant@debian.org>  Sat, 06 Feb 2021 19:42:01 -0800
+
 flash-kernel (3.103) unstable; urgency=medium
 
   * Team upload
