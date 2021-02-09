@@ -584,6 +584,34 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Hardkernel ODROID-C4
+Kernel-Flavors: arm64
+DTB-Id: amlogic/meson-sm1-odroid-c4.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Hardkernel ODROID-HC4
+Kernel-Flavors: arm64
+DTB-Id: amlogic/meson-sm1-odroid-hc4.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Hardkernel ODROID-N2
+Kernel-Flavors: arm64
+DTB-Id: amlogic/meson-g12b-odroid-n2.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
+Machine: Hardkernel ODROID-N2Plus
+Kernel-Flavors: arm64
+DTB-Id: amlogic/meson-g12b-odroid-n2-plus.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Hardkernel ODROID-U3 board based on Exynos4412
 Kernel-Flavors: armmp armmp-lpae
 DTB-Id: exynos4412-odroidu3.dtb
