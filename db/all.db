@@ -1442,6 +1442,15 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: Purism Librem 5r4
+Kernel-Flavors: any
+DTB-Id: imx8mq-librem5-r4.dtb
+Boot-Initrd-Path: /boot/initrd.img
+Boot-Kernel-Path: /boot/vmlinuz
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Q8 A13 Tablet
 Kernel-Flavors: armmp
 Boot-Script-Path: /boot/boot.scr
