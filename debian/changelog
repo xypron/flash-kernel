@@ -1,3 +1,10 @@
+flash-kernel (3.105) UNRELEASED; urgency=medium
+
+  [ Henry-Nicolas Tourneur ]
+  * Add Librem5r4 (Evergreen).
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 29 Jan 2022 21:14:37 +0100
+
 flash-kernel (3.104) unstable; urgency=medium
 
   [ Guido Günther ]
