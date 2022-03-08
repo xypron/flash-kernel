@@ -1719,6 +1719,13 @@ Boot-DTB-Path: /boot/dtb
 Required-Packages: u-boot-tools
 Bootloader-Sets-Incorrect-Root: no
 
+Machine: SiFive HiFive Unmatched A00
+Kernel-Flavors: generic riscv64
+DTB-Id: sifive/hifive-unmatched-a00.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Sinlinx SinA31s Development Board
 Kernel-Flavors: armmp armmp-lpae
 Boot-Script-Path: /boot/boot.scr
