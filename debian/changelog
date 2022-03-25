@@ -1,5 +1,14 @@
 flash-kernel (3.105) UNRELEASED; urgency=medium
 
+  [ Matthias Klose ]
+  * Allow to build without the udeb package. (Closes: #983498)
+
+  [ Heinrich Schuchardt ]
+  * all.db: add support for ODROID-C4, -HC4, -N2, -N2Plus (Closes: #982369)
+
+  [ Date Huang ]
+  * functions: skip flash-kernel in all EFI system
+
   [ Henry-Nicolas Tourneur ]
   * Add Librem5r4 (Evergreen).
 
