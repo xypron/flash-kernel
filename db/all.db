@@ -1922,6 +1922,13 @@ Boot-Script-Path: /boot/boot.scr
 U-Boot-Script-Name: bootscr.uboot-generic
 Required-Packages: u-boot-tools
 
+Machine: StarFive VisionFive V1
+Kernel-Flavors: generic riscv64
+DTB-Id: starfive/jh7100-starfive-visionfive-v1.dtb
+Boot-Script-Path: /boot/boot.scr
+U-Boot-Script-Name: bootscr.uboot-generic
+Required-Packages: u-boot-tools
+
 Machine: Theobroma Systems RK3399-Q7 SoM
 Kernel-Flavors: arm64
 DTB-Id: rockchip/rk3399-puma-haikou.dtb
