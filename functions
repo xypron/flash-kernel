@@ -139,6 +139,13 @@ check_supported() {
 	}
 }
 
+get_boot_cmd() {
+        case "$(uname -m)" in
+        aarch64|aarch64_be|armv8b|armv8l|riscv64) echo booti ;;
+        *) echo bootz ;;
+        esac
+}
+
 get_cpuinfo_hardware() {
 	grep "^Hardware" "$PROC_CPUINFO" | sed 's/Hardware\s*:\s*//'
 }
@@ -479,6 +486,7 @@ mkimage_script() {
 	sed -e "s/@@KERNEL_VERSION@@/$kvers/g" \
             -e "s!@@LINUX_KERNEL_CMDLINE@@!$(get_kernel_cmdline)!g" \
             -e "s!@@LINUX_KERNEL_CMDLINE_DEFAULTS@@!$(get_kernel_cmdline_defaults)!g" \
+            -e "s!@@BOOT_CMD@@!$(get_boot_cmd)!g" \
             -e "/@@UBOOT_ENV_EXTRA@@/{
                   s/@@UBOOT_ENV_EXTRA@@//g
                   r $ubootenv
